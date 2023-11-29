@@ -9,9 +9,22 @@ import SwiftUI
 
 struct MenuView: View {
     
-var body: some View {
+    @State var menuItems = [MenuItem]()
+    var dataService = DataService()
+    
+    var body: some View {
         
-       Text("MENU")
+        List(menuItems) { item in
+            
+            MenuListRow(item: item)
+            
+        }
+        .listStyle(.plain)
+        .onAppear {
+            // Call for the data
+            menuItems = dataService.getMenuData()
+        }
+        
 
     }
 }
