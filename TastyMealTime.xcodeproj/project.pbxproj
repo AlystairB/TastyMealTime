@@ -19,6 +19,9 @@
 		4DE98F5B2B150545008B8608 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE98F5A2B150545008B8608 /* MenuView.swift */; };
 		4DE98F5D2B1509F4008B8608 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE98F5C2B1509F4008B8608 /* DataService.swift */; };
 		4DE98F5F2B1541A2008B8608 /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE98F5E2B1541A2008B8608 /* Grids.swift */; };
+		BCC814F92B1EBC8300B40C18 /* HoursView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814F82B1EBC8300B40C18 /* HoursView.swift */; };
+		BCC814FB2B1ED2F100B40C18 /* MenuItemFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814FA2B1ED2F000B40C18 /* MenuItemFullView.swift */; };
+		BCC814FD2B1ED71400B40C18 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC814FC2B1ED71300B40C18 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		4DE98F5A2B150545008B8608 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		4DE98F5C2B1509F4008B8608 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4DE98F5E2B1541A2008B8608 /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
+		BCC814F72B1EBBBC00B40C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BCC814F82B1EBC8300B40C18 /* HoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursView.swift; sourceTree = "<group>"; };
+		BCC814FA2B1ED2F000B40C18 /* MenuItemFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemFullView.swift; sourceTree = "<group>"; };
+		BCC814FC2B1ED71300B40C18 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,14 +75,18 @@
 		4DE98F442B14474E008B8608 /* TastyMealTime */ = {
 			isa = PBXGroup;
 			children = (
+				BCC814F72B1EBBBC00B40C18 /* Info.plist */,
 				4DE98F452B14474E008B8608 /* TastyMealTimeApp.swift */,
 				4DE98F472B14474E008B8608 /* MainView.swift */,
+				BCC814F82B1EBC8300B40C18 /* HoursView.swift */,
 				4DE98F5E2B1541A2008B8608 /* Grids.swift */,
 				4DE98F562B150489008B8608 /* AboutView.swift */,
 				4DE98F582B1504A0008B8608 /* GalleryView.swift */,
 				4D08CF562B17B1B600FD2DB5 /* PhotoView.swift */,
 				4DE98F5A2B150545008B8608 /* MenuView.swift */,
+				BCC814FC2B1ED71300B40C18 /* WelcomeView.swift */,
 				4D08CF582B17E40E00FD2DB5 /* MenuListRow.swift */,
+				BCC814FA2B1ED2F000B40C18 /* MenuItemFullView.swift */,
 				4DE98F5C2B1509F4008B8608 /* DataService.swift */,
 				4D08CF542B17A9C300FD2DB5 /* MenuItemModel.swift */,
 				4DE98F492B144750008B8608 /* Assets.xcassets */,
@@ -163,16 +174,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC814F92B1EBC8300B40C18 /* HoursView.swift in Sources */,
 				4DE98F5B2B150545008B8608 /* MenuView.swift in Sources */,
 				4DE98F482B14474E008B8608 /* MainView.swift in Sources */,
 				4DE98F572B150489008B8608 /* AboutView.swift in Sources */,
 				4D08CF592B17E40E00FD2DB5 /* MenuListRow.swift in Sources */,
 				4D08CF572B17B1B600FD2DB5 /* PhotoView.swift in Sources */,
 				4D08CF552B17A9C300FD2DB5 /* MenuItemModel.swift in Sources */,
+				BCC814FD2B1ED71400B40C18 /* WelcomeView.swift in Sources */,
 				4DE98F5D2B1509F4008B8608 /* DataService.swift in Sources */,
 				4DE98F462B14474E008B8608 /* TastyMealTimeApp.swift in Sources */,
 				4DE98F592B1504A0008B8608 /* GalleryView.swift in Sources */,
 				4DE98F5F2B1541A2008B8608 /* Grids.swift in Sources */,
+				BCC814FB2B1ED2F100B40C18 /* MenuItemFullView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +320,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TastyMealTime/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -344,6 +360,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TastyMealTime/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

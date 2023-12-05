@@ -8,9 +8,41 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State private var hasTimeElapsed = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+            
+            NavigationView{
+                
+                NavigationLink(destination: {
+                    MainView()
+                    
+                }() .navigationBarBackButtonHidden(true)
+                    , label: {
+                    
+                    VStack {
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 300)
+                            .padding(.bottom, 40)
+                        
+                        Text("Welcome!")
+                            .foregroundColor(.white)
+                            .padding(.vertical)
+                            .padding(.horizontal, 30)
+                            .background(.blue)
+                            .cornerRadius(10)
+                    }
+                    
+                })
+               
+            }
+
+        
     }
+    
 }
 
 #Preview {

@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct MenuItemFullView: View {
+    
+    var item: MenuItem
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Image(item.imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(10)
+            
+            Text(item.name)
+                .bold()
+            
+            Text("$" + item.price)
+        }
+        .listRowSeparator(.hidden)
+        .listRowBackground(
+            Color(.brown)
+                .opacity(0.1)
+        )
     }
 }
 
+
 #Preview {
-    MenuItemFullView()
+    MenuItemFullView(item: MenuItem(name: "Tasty Thing", price: "99.99", imageName: "tako-sushi"))
 }

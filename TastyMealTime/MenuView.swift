@@ -14,18 +14,21 @@ struct MenuView: View {
     
     var body: some View {
         
-        List(menuItems) { item in
-            
-            MenuListRow(item: item)
-            
-        }
-        .listStyle(.plain)
-        .onAppear {
-            // Call for the data
-            menuItems = dataService.getMenuData()
+        NavigationStack {
+            List(menuItems) { item in
+                
+                NavigationLink(destination: MenuItemFullView(item: item)) {
+                    MenuListRow(item: item)
+                }
+                
+            }
+            .listStyle(.plain)
+            .onAppear {
+                // Call for the data
+                menuItems = dataService.getMenuData()
+            }
         }
         
-
     }
 }
 

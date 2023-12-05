@@ -32,6 +32,13 @@ struct MainView: View {
                         Text("Gallery")
                     }
                 }
+            HoursView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "timer")
+                        Text("Hours")
+                    }
+                }
         }
     }
 }
